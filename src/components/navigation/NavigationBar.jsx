@@ -35,13 +35,13 @@ function NavigationBar() {
         const projectPosition = project.offsetTop;
         const contactPosition = contact.offsetTop;
 
-        if(scroll<experiencePosition-1){
+        if(scroll<experiencePosition-101){
             changeStyleOfNavButton(homeButtonRef.current);
-        } else if(scroll<skillsPosition-1){
+        } else if(scroll<skillsPosition-101){
             changeStyleOfNavButton(experienceButtonRef.current);
-        } else if(scroll<projectPosition-1){
+        } else if(scroll<projectPosition-101){
             changeStyleOfNavButton(skillsButtonRef.current);
-        } else if(scroll<contactPosition-1){
+        } else if(scroll<contactPosition-101){
             changeStyleOfNavButton(projectButtonRef.current);
         } else {
             changeStyleOfNavButton(contactButtonRef.current);
@@ -65,7 +65,12 @@ function NavigationBar() {
 
     const scrollTo = (id) => {
         const element = document.getElementById(id);
-        element.scrollIntoView({ behavior: "smooth" });
+        window.scrollTo({ 
+            behavior: "smooth",
+            left: 0,
+            top: element.offsetTop-100, 
+        });
+        //element.scrollIntoView({ behavior: "smooth" });
     }
 
     return (

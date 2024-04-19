@@ -2,5 +2,9 @@
     max-width: 1000px;
     margin: auto;
     padding-top: 80px;
-    height: calc(100vh - 80px);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap:80px;
 }

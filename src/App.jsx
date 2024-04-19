@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import './App.css'
 import Home from './components/home/Home'
 import NavigationBar from './components/navigation/NavigationBar';
@@ -11,6 +10,9 @@ function App() {
 
     return (
         <>
+        <div>
+
+        
             <NavigationBar/>
             <main id="mainContainer">
                 <Home/>
@@ -19,6 +21,7 @@ function App() {
                 <Project/>
                 <Contact/>
             </main>
+        </div>
         </>
     )
 }

@@ -1,20 +1,20 @@
 import "./ui.css"
-import { IoEarth, IoOpenOutline } from "react-icons/io5";
+import { IoOpenOutline } from "react-icons/io5";
 
 function Card({
     title = "Title",
     text = "Lorem ipsum dolor",
     cardPositionName = "Software Developer",
-    fromTo = "2001 - 2024",
-    image = "univer.jpg",
+    fromTo = null,
+    image = null,
     buttonAction = null,
-    website = "https://www.univer.hu/",
+    links = null,
     ...props
 }) {
  
   return (
-    <div className="card">
-        <div className="cardImage" style={{backgroundImage:"url('"+image+"')"}}></div>
+    <div className={`card ${image ? "" : "cardWithoutImage"}`}>
+        {image ? <div className="cardImage" style={{backgroundImage:"url('"+image+"')"}}></div> : ""}
         <div className="cardContent">
             <h3 className="cardTitle">
                 {title}
@@ -26,11 +26,15 @@ function Card({
                 {text}
             </div>
             <div className="cardBottom">
-                <div>{fromTo}</div>
+                <div>{fromTo ? fromTo : ""}</div>
                 <div className="cardActions">
-                    <a className="icon" href={website} target="_blank">
-                        <IoEarth size={18} fill={"#333"}/>
-                    </a>
+                    { links ? links.map((link)=>{
+                        return <a className="icon" key={link.key} href={link.website} target="_blank">
+                            <link.icon size={18}/>
+                        </a>
+                    }): ""
+                    }
+                    
                     {buttonAction ? <button className="icon" onClick={buttonAction}>
                         <IoOpenOutline size={18}/>
                     </button> : ""}

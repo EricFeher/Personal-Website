@@ -6,6 +6,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 30px;
     overflow: hidden;
+    background-color: var(--primaryColor);
+}
+
+.cardWithoutImage {
+    grid-template-rows: 1fr !important;
 }
 
 .cardImage {
@@ -56,4 +61,41 @@
     display: flex;
     gap:10px;
     justify-content: end;
+}
+
+.skillContainer {
+    font-weight: var(--fontSemiBold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width: 100px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skillImgContainer {
+    position: relative;
+    height: 75px;
+    width: 75px;
+    background-color: var(--secondaryColor);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.skillImage {
+    filter: brightness(0.0) invert();
+}
+
+.skillContainer:hover .skillImgContainer{
+    background-color: var(--primaryColor);
+}
+
+.skillContainer:hover .skillImage{
+    background-color: var(--primaryColor);
+    filter: brightness(1);
 }

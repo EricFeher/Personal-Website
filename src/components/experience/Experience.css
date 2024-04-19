@@ -3,13 +3,9 @@
     align-items: center;
     width: 100%;
     flex-direction: column;
-    height: calc(100vh - 100px);
 
 }
 
-#experienceTitle {
-    padding-bottom: 40px;
-}
 
 #experienceCardContainer {
     display: flex;

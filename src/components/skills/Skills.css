@@ -1,4 +1,14 @@
 #skills {
-    margin: auto;
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 }
+
+.skillsContent {
+    display: flex;
+    gap:50px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+

@@ -1,12 +1,9 @@
-import { useEffect } from "react";
 import "./Experience.css"
 import Card from "../ui/Card"
+import { IoEarth } from "react-icons/io5";
+
 
 function Experience() {
-   
-    useEffect(()=>{
-        
-    },[])
 
     return (
         <div id="experience">
@@ -21,7 +18,11 @@ function Experience() {
                 fromTo = "Jul 2022 - Present"
                 image = "/assets/gerhardt.png"
                 buttonAction = {() => console.log("working")}
-                website = "https://www.gerhardt.io/"
+                links = {[{
+                    website: "https://www.gerhardt.io/",
+                    icon: IoEarth,
+                    key: 0
+                }]}
             />
             
             <Card 
@@ -31,7 +32,11 @@ function Experience() {
                 fromTo = "Nov 2018 - Apr 2019"
                 image = "/assets/drcode.png"
                 buttonAction = {() => console.log("working")}
-                website = "https://programozzvelunk.hu/"
+                links = {[{
+                    website: "https://programozzvelunk.hu/",
+                    icon: IoEarth,
+                    key: 0
+                },]}
             />
             <Card 
                 title="Univer Product Zrt" 
@@ -40,7 +45,11 @@ function Experience() {
                 fromTo = "2017 - 2020"
                 image = "/assets/univer.jpg"
                 buttonAction = {() => console.log("working")}
-                website = "https://www.univer.hu/"
+                links = {[{
+                    website: "https://www.univer.hu/",
+                    icon: IoEarth,
+                    key: 0
+                }]}
             />
             
             

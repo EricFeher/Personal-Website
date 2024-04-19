@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --primaryColor: #FFFFFF;
+    --primaryColor: #ffffff;
     --secondaryColor: #333333;
 
     --fontSemiBold: 500;
@@ -32,4 +32,77 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: var(--fontMediumBold);
+    line-height: 64px;
+    margin-bottom: 5px;
+
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 30px;
+    font-weight: var(--fontMediumBold);
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-weight: var(--fontSemiBold);
+}
+
+.button {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-weight: var(--fontSemiBold) !important;
+    font-family: inherit;
+    border: none;
+    font-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+
+.button:hover {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+
+.icon {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    border: solid 1px var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+    cursor: pointer;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    fill: var(--secondaryColor);
+    color: var(--secondaryColor);
+}
+
+.icon:hover {
+    background-color: var(--secondaryColor);
+    fill: var(--primaryColor);
+    color: var(--primaryColor);
+}
+
+.icon:hover svg {
+    fill: var(--primaryColor);
+    color: var(--primaryColor);
 }

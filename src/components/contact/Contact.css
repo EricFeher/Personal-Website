@@ -20,8 +20,6 @@
     justify-content: center;
     gap:30px;
     margin-top: 20px;
-
-    
 }
 
 .infoBox {
@@ -110,6 +108,37 @@
     }
     to {
         transform: rotate(360deg);
+
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #contactContent{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #contactInfoContainer{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        gap:30px;
+        margin-top: 20px;
+    }
+
+    #sendMessageContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+    
+    }
+
+    #sendMessageContainer input, #sendMessageContainer textarea {
+        width: 250px !important;
 
     }
 }

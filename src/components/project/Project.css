@@ -13,3 +13,10 @@
     align-items: center;
     gap:50px;
 }
+
+@media screen and (max-width: 1050px) {
+    #porjectContent {
+        flex-direction: column;
+        gap:30px;
+    }
+}

@@ -8,3 +8,17 @@
     grid-template-columns: 1fr;
     gap:80px;
 }
+
+
+@media screen and (max-width: 1050px) {
+    #mainContainer {
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap:80px;
+    }
+  }

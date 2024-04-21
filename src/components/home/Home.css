@@ -23,43 +23,38 @@
 #landingPicutre {
     height: 300px;
     aspect-ratio: 1/1;
-    background-image: url("/assets/portrait.png");
+    background-image: url("/assets/profilepic.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 }
 
-@keyframes blobAnimation {
-    0% {
-        border-radius: 53% 47% 56% 44% / 53% 65% 35% 47%;
+@media screen and (max-width: 1050px) {
+    #home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        gap: 30px;
+        width: 300px;
     }
-    25% {
-        border-radius: 35% 65% 45% 55% / 63% 40% 60% 37%;
+
+    #welcomeContainer h1,#welcomeContainer h3{
+        text-align: center;
+
     }
-    50% {
-        border-radius: 56% 44% 66% 34% / 52% 52% 48% 48%;
+
+    #welcomeText {
+        margin-bottom: 30px;
+        text-align: justify;
     }
-    75% {
-        border-radius: 65% 35% 39% 61% / 51% 41% 59% 49%;
+
+    #landingPicutre {
+        height: 200px;
     }
-    100% {
-        border-radius: 53% 47% 56% 44% / 53% 65% 35% 47%;
-    }
-    /*0% {
-        border-radius: 70% 30% 70% 30% / 30% 70% 30% 70% ;
-    }
-    25% {
-        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-    }
-    50% {
-        border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%;
-    }
-    75% {
-        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-    }
-    100% {
-        border-radius: 70% 30% 70% 30% / 30% 70% 30% 70%;
-    }*/
-}
+
+
+
+  }

@@ -7,8 +7,17 @@
 
 .skillsContent {
     display: flex;
+    flex-wrap: wrap;
+
     gap:50px;
-    justify-content: space-between;
-    padding-bottom: 30px;
+    justify-content:center;
 }
 
+@media screen and (max-width: 1050px) {
+    .skillsContent {
+        gap:10px;
+        justify-content:space-around;
+
+    }
+    
+}

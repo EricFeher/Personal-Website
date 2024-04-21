@@ -11,20 +11,27 @@ function Home() {
     return (
         <div id="home">
             <div id="welcomeContainer">
-                <h1>Hi, I'm Erik!</h1>
+                <h1>Erik Fehér</h1>
                 <h3>Software Engineer</h3>
                 <div id="welcomeText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                As a recent graduate, I see my future in the world of software development.
+                I would like to continue my career in an environment where I can find new challenges
+                and improve my skills to my heart's content.
                 </div>
                 <div id="welcomeButtons">
                     <button onClick={()=> scrollTo("contact")} className="button" >
                         Contact Me <TbSend size={24}/>
                     </button>
-                    <a className="button">
-                        Resume <TbFileTypePdf size={24}/>
-                    </a>
+                    {
+                        window.innerWidth > 1050 ?
+                        <a className="button" href="/assets/ErikFeher_CV_2024.pdf" >
+                            Resume <TbFileTypePdf size={24}/>
+                        </a>
+                        :
+                        <a className="button" href="/assets/ErikFeher_CV_2024.pdf" download>
+                            Resume <TbFileTypePdf size={24}/>
+                        </a>
+                    }
                 </div>
             </div>
             <div id="pictureContainer">

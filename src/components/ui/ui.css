@@ -34,6 +34,7 @@
 .cardText {
     font-size: var(--smallFontSize);
     text-align: justify;
+    max-height: 100px !important;
 }
 
 .cardFromTo {
@@ -75,7 +76,6 @@
 }
 
 .skillImgContainer {
-    position: relative;
     height: 75px;
     width: 75px;
     background-color: var(--secondaryColor);
@@ -98,4 +98,82 @@
 .skillContainer:hover .skillImage{
     background-color: var(--primaryColor);
     filter: brightness(1);
+}
+
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: var(--primaryColor);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+
+}
+
+.modalContent {
+    max-width: 1000px;
+    padding: 25px;
+}
+.modalCloseButton {
+    position: relative;
+    padding: 5px 8px !important;
+    background-color: var(--primaryColor) !important;
+    color: var(--secondaryColor) !important;
+    width: 75px !important;
+    height: 75px !important;
+
+}
+
+.modalCloseButton:hover {
+    background-color: rgb(226, 77, 77) !important;
+    color: var(--primaryColor) !important;
+}
+
+.modalHeader {
+    display: flex;
+    margin-bottom: 50px;
+    margin: 0 0 50px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modalTitle {
+    padding-bottom: 0 !important;
+    margin-bottom:0 !important;
+}
+
+.modalPositionName {
+    font-weight: var(--fontSemiBold);
+    font-size: var(--largeFontSize);
+}
+
+.modalContent p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1050px) {
+    .skillContainer {
+        gap:10px;
+        width: 85px;
+        font-size: var(--smallFontSize);
+    }
+
+    .skillImage {
+        transform: scale(0.6);
+    }
+
+    .skillImgContainer {
+        height: 50px;
+        width: 50px;
+    }
+
+    .modalContent h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
 }

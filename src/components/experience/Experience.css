@@ -11,3 +11,11 @@
     display: flex;
     gap: 40px
 }
+
+@media screen and (max-width: 1050px) {
+    #experienceCardContainer {
+        flex-direction: column;
+        gap: 30px
+
+    }
+}

@@ -29,8 +29,10 @@ function Contact() {
         let email = emailRef.current.value;
         let message = messageRef.current.value;
         buttonRef.current.disabled = true;
+
+        let regex =/^[\w-\.+]+@([\w-]+\.)+[\w-]{2,4}$/
         
-        if(name == "" || email == "" || message == "") {
+        if(name == "" || email == "" || message == "" || !regex.exec(email)) {
             setError(true);
             const interval = setInterval(() => {
                 setError(false);

@@ -62,3 +62,9 @@
 .navButtonActive {
     color: var(--primaryColor);
 }
+
+@media screen and (max-width: 1050px) {
+    #navBarContainer {
+        display: none;
+    }
+  }

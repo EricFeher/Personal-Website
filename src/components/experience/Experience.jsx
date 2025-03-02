@@ -16,10 +16,31 @@ function Experience() {
             
             <div id="experienceCardContainer">
             <Card 
+                title="SAP" 
+                text="At SAP, I collaborate with a team of developers following the Scrum methodology to build and enhance an application."
+                cardPositionName = "Software Engineer"
+                fromTo = "Sep 2024 - Present"
+                image = "/assets/SAP.png"
+                buttonAction = {true}
+                links = {[{
+                    website: "https://www.sap.com/",
+                    icon: IoEarth,
+                    key: 0
+                }]}
+                modalText={
+                <div>
+                    <p>
+                    At SAP, I collaborate with a team of developers following the <b>Scrum</b> methodology to build and enhance an application,
+                    using both <b>Jetpack Compose</b> and <b>View-based UI</b>, integrating with <b>SAP Fiori Elements</b> while following best practices of <b>MVVM</b> architectural pattern.
+                    </p>
+                </div>
+                }
+            />
+            <Card 
                 title="Gerhardt Informatics" 
                 text="I am contributing to projects like a carpooling website and a canteen monitoring site, handling both frontend and backend tasks."
                 cardPositionName = "Software Engineer"
-                fromTo = "Jul 2022 - Present"
+                fromTo = "Jul 2022 - Jul 2024"
                 image = "/assets/gerhardt.png"
                 buttonAction = {true}
                 links = {[{
@@ -30,11 +51,11 @@ function Experience() {
                 modalText={
                 <div>
                     <p>
-                    As a software engineer, I develop several projects with a team of developers using different technologies
+                    As a software engineer, I developed several projects with a team of developers using different technologies
                     and tools including <b>Kotlin</b>, <b>Java</b>,  <b>Spring</b>, <b>Dropwizard</b>, <b>Git</b>, <b>PostgreSQL</b>, <b>Jenkins</b>, <b>Caddy</b>, <b>Keycloak</b>.
-                    The main projects are a carpooling website and a monitoring website for canteens. For these sites,
-                    I implement and change features both in <b>frontend</b> and <b>backend</b>. Besides software development,
-                    I communicate with customers and I provide support and feedback for interns to improve their skills
+                    The main projects were a carpooling website and a monitoring website for canteens. For these sites,
+                    I implemented and changed features both in <b>frontend</b> and <b>backend</b>. Besides software development,
+                    I communicated with customers and I provided support and feedback for interns to improve their skills
                     in software development.
                     </p>
                     <p>
@@ -64,7 +85,7 @@ function Experience() {
                 modalText={
                     <div>
                         <p>
-                        As a programmer instructor, I taught elementary school students how to code using Scratch.
+                        As a programmer instructor, I taught students how to code using Scratch.
                         I tried to ensure that each student was challenged and engaged while learning basic programming
                         concepts. I provided support and feedback to help them build their skills and to inspire the new
                         generation of young coders.

@@ -14,8 +14,7 @@ function Home() {
                 <h1>Erik Fehér</h1>
                 <h3>Software Engineer</h3>
                 <div id="welcomeText">
-                As a recent graduate, I see my future in the world of software development.
-                I would like to continue my career in an environment where I can find new challenges
+                As a Software Engineer, I like to be in an environment where I can find new challenges
                 and improve my skills to my heart's content.
                 </div>
                 <div id="welcomeButtons">
@@ -24,11 +23,11 @@ function Home() {
                     </button>
                     {
                         window.innerWidth > 1050 ?
-                        <a className="button" href="/assets/ErikFeher_CV_2024.pdf" >
+                        <a className="button" href="/assets/ErikFeher_CV_2025.pdf" >
                             Resume <TbFileTypePdf size={24}/>
                         </a>
                         :
-                        <a className="button" href="/assets/ErikFeher_CV_2024.pdf" download>
+                        <a className="button" href="/assets/ErikFeher_CV_2025.pdf" download>
                             Resume <TbFileTypePdf size={24}/>
                         </a>
                     }

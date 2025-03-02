@@ -12,10 +12,17 @@
     gap: 40px
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (1050px < width <= 1350px) {
+    #experienceCardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px
+    }
+}
+
+@media screen and (width <= 1050px) {
     #experienceCardContainer {
         flex-direction: column;
         gap: 30px
-
     }
 }
